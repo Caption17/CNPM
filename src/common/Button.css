@@ -1,0 +1,18 @@
+.btn {
+  min-width: 150px;
+  display: flex;
+  justify-content: center;
+  padding: 16px 18px;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  align-items: center;
+  cursor: pointer;
+}
+.btn.btn-primary{
+  background-color: rgba(238, 77, 45,1);
+}
+.btn-primary:hover{
+  background-color: rgba(238, 77, 45,0.6);
+}

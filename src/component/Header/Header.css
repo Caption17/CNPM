@@ -1,0 +1,86 @@
+.header-inner {
+  padding: 3rem;
+  background-color: #1c2340;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-title {
+  padding: 0 1.5rem;
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 1rem #fff, 0 0 2rem #fff, 0 0 3rem #e60073, 0 0 4rem #e60073, 0 0 5rem #e60073, 0 0 6rem #e60073;
+  animation: text-glow ease-in-out 1s infinite alternate;
+}
+
+.header-intro {
+  padding: 1.5rem 3.5rem;
+}
+
+.intor-list {
+  list-style: none;
+  display: flex;
+}
+
+.intro-item i {
+  position: relative;
+}
+
+.intro-item {
+  font-size: 1.8rem;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  position: relative;
+}
+.link {
+  text-decoration: none;
+  color: white;
+}
+.intro-item+.intro-item {
+  margin-left: 15px;
+}
+
+.intro-item::before {
+  content: '';
+  position: absolute;
+  width: 0%;
+  background-color: white;
+  height: 5px;
+  border-radius: 10px;
+  left: 0;
+  top: 100%;
+  transition: width linear 0.5s;
+}
+
+.intro-item:hover:before {
+  width: 100%;
+}
+
+.cart-number {
+  display: block;
+  width: 25px;
+  font-size: 1.4rem;
+  height: 25px;
+  background-color: red;
+  position: absolute;
+  border-radius: 50%;
+  top: -15px;
+  text-align: center;
+  right: -9px;
+  line-height: 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@keyframes text-glow {
+  0% {
+      text-shadow: 0 0 1rem #fff, 0 0 2rem #fff, 0 0 3rem #e60073, 0 0 4rem #e60073, 0 0 5rem #e60073, 0 0 6rem #e60073, 0 0 7rem #e60073, 0 0 8rem #e60073;
+  }
+  100% {
+      text-shadow: 0 0 1rem #fff, 0 0 2rem #fff, 0 0 3rem #ff4da6, 0 0 4rem #ff4da6, 0 0 5rem #ff4da6, 0 0 6rem #ff4da6, 0 0 7rem #ff4da6, 0 0 8rem #ff4da6;
+  }
+}

@@ -1,0 +1,21 @@
+.cart-empty {
+  padding: 3rem;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.cart-message {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.6rem;
+}
+.cart-empty-img {
+  width: 200px;
+    margin: 0 auto;
+}
+.btn-cart-empty {
+  font-size: 1.7rem;
+  width: 200px;
+  margin: 0 auto;
+}
